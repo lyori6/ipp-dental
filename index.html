@@ -1,14 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IPP Dental | Modern Dentistry & Premium Oral Care</title>
-    <meta name="description" content="Experience advanced clinical dental care with absolute luxury. IPP Dental offers state-of-the-art 3D scans, same-day dental restoration, anxiety-free dentistry, and instant online scheduling." />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPP Dental | Independent Practice Partners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo-wrap">
+      <div class="nav-logo">IPP <span>Dental</span></div>
+      <div class="nav-tagline">Independent practices, professionally managed.</div>
+    </div>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </nav>
+
+  <section class="hero">
+    <svg class="hero-blob" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+      <path d="M300 45 C370 18, 440 80, 448 160 C456 240, 415 320, 345 365 C275 410, 175 408, 115 358 C55 308, 28 210, 48 130 C68 50, 148 10, 220 8 C258 7, 270 62, 300 45 Z" fill="#1a5a8a"/>
+    </svg>
+    <p class="hero-eyebrow">Independent Practice Partners</p>
+    <h1 class="hero-headline">
+      Clinical autonomy.<br>
+      <span class="accent">Operational excellence.</span>
+    </h1>
+    <p class="hero-body">
+      IPP Dental partners with independent dental practice owners who want to stay independent. We take full responsibility for the non-clinical side so you can focus entirely on dentistry.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">Start a conversation</a>
+    </div>
+  </section>
+
+  <div class="contact-section" id="contact">
+    <div class="contact-inner">
+      <p class="section-eyebrow">Get in touch</p>
+      <h2 class="section-heading">Choose how you'd like to <span>connect.</span></h2>
+      <div class="contact-grid">
+
+        <!-- Contact Form Card -->
+        <div class="contact-card">
+          <h3 class="card-title">Send a <span>Message</span></h3>
+          <p class="card-sub">We will get back to you within one business day.</p>
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your practice..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send message</button>
+          </form>
+        </div>
+
+        <!-- Calendly Card -->
+        <div class="contact-card">
+          <h3 class="card-title">Schedule a <span>Call</span></h3>
+          <p class="card-sub">Book a 30-minute conversation at a time that works for you.</p>
+          <div class="calendly-wrap">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_LINK" style="min-width:320px;height:380px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">IPP Dental</div>
+      <a href="mailto:hello@ipp-dental.com" class="footer-email">hello@ipp-dental.com</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-disclaimer">IPP Dental provides non-clinical operational management services only. Nothing on this website constitutes dental, medical, or clinical advice. All clinical decisions remain solely with the treating dentist.</p>
+      <p class="footer-copy">© 2026 Independent Practice Partners LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
 </html>
