@@ -18,7 +18,7 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'IPP Dental Contact Form <onboarding@resend.dev>',
+        from: 'IPP Dental <hello@ipp-dental.com>',
         to: ['hello@ipp-dental.com'],
         reply_to: email,
         subject: `New Contact: ${name}`,
