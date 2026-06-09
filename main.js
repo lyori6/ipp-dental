@@ -1,7 +1,7 @@
 // IPP Dental Landing Page Logic
 
 // Replace with your deployed Google Apps Script URL
-const GOOGLE_SHEET_URL = 'YOUR_GOOGLE_SCRIPT_URL';
+const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbyQv7_Zi_8KMloxjJF4aRhdIJGT58F1HsEGqm-hYDZbzH4n4bDLji0lgmgH6bJhx-CsHA/exec';
 
 document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
