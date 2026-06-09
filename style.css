@@ -44,6 +44,7 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   overflow-x: hidden;
+  overscroll-behavior-x: none;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -99,6 +100,7 @@ nav {
   padding: 10px 24px;
   border-radius: 100px;
   background: transparent;
+  touch-action: manipulation;
   transition: var(--transition-smooth);
 }
 
@@ -196,6 +198,7 @@ nav {
   border-radius: 100px;
   border: none;
   cursor: pointer;
+  touch-action: manipulation;
   box-shadow: 0 4px 14px rgba(37, 117, 176, 0.2);
   transition: var(--transition-smooth);
 }
@@ -208,6 +211,18 @@ nav {
 
 .btn-primary:active {
   transform: translateY(0);
+  background: var(--brand-hover);
+}
+
+.form-submit:active {
+  transform: translateY(0);
+  background: var(--brand-hover);
+}
+
+.nav-cta:active {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: #fff;
 }
 
 /* --- Contact & Booking Section --- */
@@ -351,6 +366,7 @@ nav {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   cursor: pointer;
+  touch-action: manipulation;
   margin-top: 8px;
   box-shadow: 0 4px 12px rgba(37, 117, 176, 0.15);
   transition: var(--transition-smooth);
@@ -475,6 +491,7 @@ footer {
     top: 4%;
     right: -8%;
     opacity: 0.08;
+    animation: none;
   }
 
   .hero-eyebrow {
