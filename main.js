@@ -1,6 +1,24 @@
 // IPP Dental Landing Page Logic
 
 document.addEventListener('DOMContentLoaded', () => {
+  const stickyCta = document.getElementById('mobile-sticky-cta');
+  if (stickyCta) {
+    const heroSection = document.querySelector('.hero');
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          stickyCta.classList.add('visible');
+          stickyCta.setAttribute('aria-hidden', 'false');
+        } else {
+          stickyCta.classList.remove('visible');
+          stickyCta.setAttribute('aria-hidden', 'true');
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (heroSection) observer.observe(heroSection);
+  }
+
   const contactForm = document.getElementById('contact-form');
   const cardContainer = document.getElementById('form-card-container');
 
